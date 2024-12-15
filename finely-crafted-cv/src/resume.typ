@@ -13,6 +13,7 @@
   email: none,
   phone: none,
   linkedin-username: none,
+  github-username: none,
   keywords: "",
   thumbnail: none, // check out https://qrframe.kylezhe.ng/ for QR code generation
   body
@@ -34,7 +35,7 @@
         text(
           size: HEADER_SIZE,
           grid(
-            columns: (1fr, auto, auto, auto, auto, auto),
+            columns: (1fr, auto, auto, auto, auto, auto, auto, auto),
             gutter: 1em,
             align: center+horizon,
             "",
@@ -42,7 +43,9 @@
             sym.divides,
             icon_and_contact("icons/phone.svg", link("tel:" + phone, phone)),
             sym.divides,
-            icon_and_contact("icons/linkedin.svg", link("https://www.linkedin.com/in/" + linkedin-username, linkedin-username))
+            icon_and_contact("icons/linkedin.svg", link("https://www.linkedin.com/in/" + linkedin-username, linkedin-username)),
+            sym.divides,
+            icon_and_contact("icons/github.svg", link("https://github.com/" + github-username, github-username))
           )
         )
       }
